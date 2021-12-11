@@ -1,0 +1,297 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet"> 
+
+
+    <title>Sarah Dean</title>
+    
+    <style type="text/css">
+	a, a:visited {
+	    text-decoration: none;
+	    color: #4682B4;
+        font-weight: 600;
+	}
+    a:hover {
+        text-decoration: underline;
+        color: #4682B4;
+        font-weight: 600;
+    }
+	body {
+	    font-size: 15px;
+	    font-family: 'Mulish', sans-serif;
+	}
+	#content {
+        margin: auto;
+        width: 100%;
+        max-width: 650px;
+        text-align:justify;
+    }
+    #content_research {
+        margin: auto;
+        width: 100%;
+        max-width: 650px;
+        text-align:left;
+    }
+	h1 {
+	    text-align: left;
+	    margin-bottom: 0px;
+	}
+	li {
+	    margin-bottom: 5px;
+	}
+	img#me {
+	    float: left;
+	    margin-right: 10px;
+	    height: 220px;
+	}
+	img#footer-image {
+	    float: center;
+	    width: 100%;
+	}
+	hr { 
+    display: block;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+	}
+
+    @media (prefers-color-scheme: dark) {
+      body {
+        color: #eee;
+        background: #121212;
+      }
+      hr {
+        border-color: white;
+      }
+    }
+    </style>
+
+
+</head>
+<body>
+    <div id="content">
+	 <h1>Sarah Dean</h1>
+	 <hr>
+     <p>sarahdean AT eecs DOT berkeley DOT edu &ensp;&middot;&ensp; <a href='cv.pdf' target="_blank">CV</a> &ensp;&middot;&ensp; <a href='https://drive.google.com/drive/folders/1OmLqbNQRFSPfOrz4xgzNSDQVpy3cvK23?usp=sharing' target="_blank">faculty app materials</a>
+	 <img src="stockholm.jpg" id="me" alt="Sarah Dean" /> &ensp;&middot;&ensp; <a target="_blank" href="https://www.youtube.com/watch?v=OslDMMWU_zc">job talk</a></p>
+	<p> 
+    I just completed my PhD in EECS at UC Berkeley.
+    I will be in Seattle, WA for a couple of months to work with <a href="https://jamiemorgenstern.com/" target="_blank">Jamie Morgenstern</a> at UW this fall.
+    <b>I am joining Cornell CS as an Assistant Professor in January 2022&mdash;if you are a student interested in working with me, feel free to reach out!</b>
+    </p>
+
+    
+    <p>I study the interplay between optimization, machine learning, and dynamics in real-world systems. My research focuses on understanding the fundamentals of data-driven methods for control and decision-making, inspired by applications ranging from robotics to recommendation systems.
+    You can learn more by reading <a href="https://www2.eecs.berkeley.edu/Pubs/TechRpts/2021/EECS-2021-170.html" target="_blank">my dissertation</a> or <a href="https://www.youtube.com/watch?v=Snvo-nbASQ4" target="_blank">watching</a> my <a href="https://slides.com/sarahdean-2/dissertation-talk" target="_blank">dissertation talk</a>.
+    </p>
+
+    <p> 
+    At UC Berkeley, I was
+    advised by <a href='https://people.eecs.berkeley.edu/~brecht/index.html' target="_blank">Ben Recht</a> and affiliated with <a href='http://bair.berkeley.edu/' target="_blank">BAIR</a> and <a href='http://www.comp-imaging.berkeley.edu/' target="_blank">BCCI</a>. I was funded by a Berkeley fellowship and the NSF graduate research fellowship.<a href="#app">*</a> 
+    I am a <a href='https://medium.com/@roeldobbe/from-techno-optimism-to-techno-dystopia-time-to-redefine-what-it-means-to-be-in-tech-7d65a83939a' target="_blank">founding member</a> of <i>Graduates for Engaged and Extended Scholarship in computing and Engineering</i> (<a href='https://geesegraduates.org/' target="_blank">GEESE</a>).
+    I interned with <a href="https://web.archive.org/web/20200808225958/https://canopy.cr/" target="_blank">Canopy</a> in Boston, MA during Summer 2019. 
+    </p> 
+    <p>
+    I graduated from the University of Pennsylvania in 2016, where I studied electrical engineering and math and was fortunate to work with professors Daniel Lee and Daniel Koditschek. 
+    During my time at Penn, I worked as a teaching assistant for several math and engineering courses and became engaged in service learning through my involvement with the <a href='https://upennwptp.weebly.com/' target="_blank">West Philadelphia Tutoring Project</a> at <a href='https://www.vpul.upenn.edu/civichouse/' target="_blank">Civic House</a>.
+    I grew up in upstate New York, and when I'm not working or <a href='https://getpocket.com/@37apjTx7Ad9bTddS07gO699g94dcA776fvoa6ex63cp90Gi82133fTrFcdtVP055' target="_blank">reading</a>, I like to spend time pretending to be athletic outside: hiking, biking, swimming, sailing, roller skating, and cross country skiing.
+    </p>  
+    </div>
+
+    <div id="content">
+    <h2>Research</h2>
+
+    <p>
+        Towards the goal of developing principled data-driven methods for control and decision-making,
+        I study the interplay between optimization, machine learning, and dynamics in real-world systems.
+        My work is enriched by collaborative projects in robotics, recommendation systems, computational imaging, and developmental economics. 
+        The highlights can be broadly categorized into two thrusts: </p>
+
+    <p>
+        <b>Guaranteeing safety in feedback control.</b> 
+        Modern autonomous systems face challenges well-suited to a combination of feedback control
+        and machine learning. To explore the risks and trade-offs that arise in such settings,
+        I've studied the <a href='https://www.youtube.com/watch?v=sa3jzjZ-3L4&feature=youtu.be' target="_blank">sample complexity</a> of classical optimal control problems, developed a method for <a href='https://slides.com/sarahdean-2/safe-lqr-acc#/' target="_blank">safely learning</a> in the presence of constraints, and derived guarantees for 
+        <a href='https://www.youtube.com/watch?v=Lgka_EgCtnY' target="_blank">perception-based control</a>.
+    </p>
+    <p>
+        <b>Ensuring values in social-digital systems.</b> 
+        While many machine learning systems that interact with people have a temporal feedback component, it can be difficult to explicitly plan around these dynamical interactions. 
+        Towards designing systems that respect important human values,
+        I have studied the <a href='http://bair.berkeley.edu/blog/2018/05/17/delayed-impact/' target="_blank">delayed impact</a> of fairness in consequential decision-making and developed a way to quantify the <a href='https://www.youtube.com/watch?v=HvtzvRW5fT8' target="_blank">reachability</a> of information within recommender systems.
+    </p>
+
+
+    
+    </div>
+
+    <div id="content">
+    <h2>Teaching</h2>
+
+    <p>At Berkeley, I worked on course development for a new <a href='https://bcourses.berkeley.edu/courses/1503123' target="_blank">EECS Anti-Racism and Social Justice course</a> (and gave a guest lecture on <a target="_blank" href="https://slides.com/sarahdean-2/bias-in-algorithms">Bias in Algorithms</a>) and as a Graduate Student Instructor for Statistical Learning Theory (EECS 281) and Introduction to Machine Learning (EECS 189/289).</p>
+
+    <p>At Penn, I worked as a teaching assistant for the lab-based Digital Audio Basics (ESE 150) and Introduction to Electrical and Systems Engineering (ESE 111). I also worked as a teaching assistant for Integral Calculus (Math 104) and Multivariate Calculus (Math 114).</p>
+   
+    </div>
+
+    <div id="content_research">
+    <h2>Publications</h2>
+
+    <p>For the most up to date list of my publications and preprints, see my <a href='https://scholar.google.com/citations?user=xhKqjpYAAAAJ' target="_blank">Google Scholar profile</a>.
+    If you are interested in code for a paper without a github link, feel free to send me an email.
+    </p>
+
+    <p>
+        <i>Towards Robust Data-Driven Control Synthesis for Nonlinear Systems with Actuation Uncertainty</i> [<a href='https://arxiv.org/abs/2011.10730' target="_blank">arXiv</a>]
+        <br>
+        Andrew J. Taylor*, Victor D. Dorobantu*, Sarah Dean*, Benjamin Recht, Yisong Yue, and Aaron D. Ames<br>
+        to appear at CDC 2021.<br>
+    </p>
+
+    <p>
+        <i>Quantifying Availability and Discovery in Recommender Systems via Stochastic Reachability</i>
+        [<a href="https://arxiv.org/abs/2107.00833" target="_blank">arXiv</a>]
+        <br>
+        Mihaela Curmei*, Sarah Dean*, and Benjamin Recht<br>
+        presented at ICML 2021,<br>
+        <a href='https://people.eecs.berkeley.edu/~sarahdean/stochastic_reachability.pdf' target="_blank">short version</a> <a href='https://www.youtube.com/watch?v=HvtzvRW5fT8' target="_blank">presented</a> at Participatory Approaches to Machine Learning workshop at ICML 2020.
+    </p>
+
+
+    <p>
+        <i>Certainty Equivalent Perception-Based Control</i>
+        [<a href='https://arxiv.org/abs/2008.12332' target="_blank">arXiv</a>]
+        [<a href='https://github.com/modestyachts/certainty_equiv_perception_control' target="_blank">github</a>]
+        [<a href='https://youtu.be/SsmV2R63GWI?t=4032'>talk</a>]
+        [<a href='https://slides.com/sarahdean-2/perception-based-control-l4dc' target="_blank">slides</a>]
+        <br>
+        Sarah Dean and Benjamin Recht<br>
+        oral presentation at L4DC 2021.
+    </p>
+
+
+    <p>
+        <i>Axes for Sociotechnical Inquiry in AI Research</i> [<a href='https://arxiv.org/abs/2105.06551' target="_blank">arXiv</a>] [<a href='https://ieeexplore.ieee.org/document/9406848' target="_blank">IEEE</a>]
+        <br>
+        Sarah Dean, Thomas Krendl Gilbert, Nathan Lambert, and Tom Zick<br>
+        published in IEEE Transactions on Technology and Society (2021).<br>
+    </p>
+
+    <p>
+        <i>AI Development for the Public Interest: From Abstraction Traps to Sociotechnical Risks</i> [<a href='https://arxiv.org/abs/2102.04255' target="_blank">arXiv</a>]
+        <br>
+        McKane Andrus, Sarah Dean, Thomas Krendl Gilbert, Nathan Lambert, and Tom Zick<br>
+        presented at IEEE ISTAS 2020.<br>
+    </p>
+
+    <p>
+        <i>Do Offline Metrics Predict Online Performance in Recommender Systems?</i>
+        [<a href='https://arxiv.org/abs/2011.07931' target="_blank">arXiv</a>]
+        [<a href='https://github.com/berkeley-reclab/RecLab' target="_blank">github</a>]
+        <br>
+        Karl Krauth, Sarah Dean*, Alex Zhao*, Wenshuo Guo*, Mihaela Curmei*, Benjamin Recht, Michael I. Jordan<br>
+        short version presented at the Workshop on Consequential Decisions in Dynamic Environments at NeurIPS 2020.
+    </p>
+
+    <p>
+        <i>Guaranteeing Safety of Learned Perception Modules via Measurement-Robust Control Barrier Functions</i>
+        [<a href='https://arxiv.org/abs/2010.16001' target="_blank">arXiv</a>]
+        [<a href='https://www.youtube.com/watch?v=x7L6Sz2lxOA' target="_blank">video</a>]
+        [<a href='https://youtu.be/ygzIT3NhAjM?t=22' target="_blank">talk</a>]
+        [<a href='https://slides.com/sarahdean-2/mr-cbf' target="_blank">slides</a>]
+        [<a href='https://github.com/rkcosner/cyberpod_sim_ros' target="_blank">github</a>]
+        <br>
+        Sarah Dean, Andrew Taylor, Ryan Cosner, Benjamin Recht, and Aaron Ames<br>
+        <b>Best Paper Finalist</b> at CoRL 2020.
+    </p>
+
+    <p>
+        <i>Balancing Competing Objectives with Noisy Data: Score-Based Classifiers for Welfare-Aware Machine Learning</i>
+        [<a href='https://arxiv.org/abs/2003.06740' target="_blank">arXiv</a>]
+        [<a href='https://github.com/estherrolf/multi-objective-impact' target="_blank">github</a>]<br>
+        Esther Rolf, Max Simchowitz, Sarah Dean, Lydia T Liu, Daniel Bj&ouml;rkegren, Moritz Hardt, and Joshua Blumenstock<br>
+        presented at ICML 2020,<br>
+        <a href='https://aiforsocialgood.github.io/neurips2019/accepted/track1/pdfs/74_aisg_neurips2019.pdf' target="_blank">short version</a> awarded <b>Best Paper</b> at NeurIPS Joint Workshop on AI for Social Good 2019.
+    </p>
+
+    <p>
+        <i>Robust Guarantees for Perception-Based Control</i>
+        [<a href='https://arxiv.org/abs/1907.03680' target="_blank">arXiv</a>] 
+        [<a href='https://laurentlessard.com/public/acc19_workshop/ACC19_sarah_dean.pdf' target="_blank">slides</a>]
+        [<a href='https://www.youtube.com/watch?v=Lgka_EgCtnY' target="_blank">talk</a>]
+        [<a href='https://people.eecs.berkeley.edu/~sarahdean/pbc_poster.pdf' target="_blank">poster</a>]
+        [<a href='https://github.com/modestyachts/robust-control-from-vision' target="_blank">github</a>]
+        <br>
+        Sarah Dean, Nikolai Matni, Benjamin Recht, and Vickie Ye<br>
+        presented at L4DC 2020.
+    </p>
+
+    <p>
+        <i>Recommendations and User Agency: The Reachability of Collaboratively-Filtered Information</i>
+        [<a href='https://arxiv.org/abs/1912.10068' target="_blank">arXiv</a>] [<a href='https://www.youtube.com/watch?v=B93qUouaZnw' target="_blank">talk</a>]
+        <br>
+        Sarah Dean, Sarah Rich, and Benjamin Recht<br>
+        presented at FAccT 2020.
+    </p>
+        
+    <p>
+        <i>On the Sample Complexity of the Linear Quadratic Regulator</i> [<a href='https://arxiv.org/abs/1710.01688' target="_blank">arXiv</a>] [<a href='https://doi.org/10.1007/s10208-019-09426-y' target="_blank">FoCM</a>] 
+       [<a href='https://www.youtube.com/watch?v=sa3jzjZ-3L4&feature=youtu.be' target="_blank">talk</a>] 
+        <br> Sarah Dean, Horia Mania, Nikolai Matni, Benjamin Recht, and Stephen Tu
+        <br> published in Foundations of Computational Mathematics (2019). </p>
+
+    <p> <i> High-throughput fluorescence microscopy using multi-frame motion deblurring </i>[<a href='https://www.osapublishing.org/boe/abstract.cfm?uri=boe-11-1-281' target="_blank">BOE</a>]
+        [<a href='https://github.com/zfphil/htdeblur' target="_blank">github</a>]
+        <!-- <i>Optimal Path and Illumination Design for Multiframe Motion Deblurring</i>  -->
+        <br>Zachary Phillips, Sarah Dean, Laura Waller, and Benjamin Recht
+        <br>published in Biomedical Optics Express 11 (2020),
+        <br><a href='https://www.osapublishing.org/abstract.cfm?URI=ISA-2018-ITu2B.4' target="_blank">extended abstract</a> awarded <b>Best Student Paper</b> in Imaging Systems at OSA Congress 2018.</p>
+
+
+    <p>
+        <i>Safely Learning to Control the Constrained Linear Quadratic Regulator</i>
+        [<a href='https://arxiv.org/abs/1809.10121' target="_blank">arXiv</a>]
+        [<a href='https://slides.com/sarahdean-2/safe-lqr-acc#/' target="_blank">slides</a>]
+        <br>
+        Sarah Dean, Stephen Tu, Nikolai Matni, and Benjamin Recht<br>
+        presented at ACC 2019.
+    </p>
+
+    <p>
+        <i>Regret Bounds for Robust Adaptive Control of the Linear Quadratic Regulator</i> 
+        [<a href='https://arxiv.org/abs/1805.09388' target="_blank">arXiv</a>] 
+        [<a href='https://github.com/modestyachts/robust-adaptive-lqr' target="_blank">github</a>] 
+        <br> Sarah Dean, Horia Mania, Nikolai Matni, Benjamin Recht, and Stephen Tu
+
+        <br> presented at NeurIPS 2018. </p>
+
+    <p>
+        <i>Delayed Impact of Fair Machine Learning</i> [<a href='https://arxiv.org/abs/1803.04383' target="_blank">arXiv</a>] [<a href='https://www.bloomberg.com/view/articles/2018-03-15/computer-algorithms-need-to-know-what-fair-means' target="_blank">Bloomberg</a>] [<a href='http://bair.berkeley.edu/blog/2018/05/17/delayed-impact/' target="_blank">BAIR Blog</a>]
+        <br> Lydia T. Liu, Sarah Dean, Esther Rolf, Max Simchowitz, and Moritz Hardt 
+        <br><b>Best Paper Award</b> at ICML 2018. </p>
+
+    <p><i> A Broader View on Bias in Automated Decision-Making: Reflecting on Epistemology and Dynamics</i> [<a href='https://arxiv.org/abs/1807.00553' target="_blank">arXiv</a>]
+        <br> Roel Dobbe, Sarah Dean, Thomas Gilbert, and Nitin Kohli
+        <br> presented at FAT/ML 2018. </p>
+
+    
+
+
+
+    </div>
+    <div id="content_research">
+    <p>
+    <a name="app">*</a>I have made my application available for reference <a href="https://drive.google.com/drive/folders/0B3t1xt1geROxOU1sY1dhNFZKc2c?resourcekey=0-1OoGpUS7TXykJyR8nYgGZA&usp=sharing" target="_blank">here</a>.
+    </p>
+    <p><img src="trees.jpg" alt="a woman among giants" id="footer-image" />
+    <br>Last updated 5 August 2021. </p>
+    </div>
+</body>
+</html>
+
