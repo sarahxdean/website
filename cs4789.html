@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet"> 
+
+
+    <title>CS 4789/5789: Introduction to Reinforcement Learning</title>
+    
+    <style type="text/css">
+    a, a:visited {
+        text-decoration: none;
+        color: #4682B4;
+        font-weight: 600;
+    }
+    a:hover {
+        text-decoration: underline;
+        color: #4682B4;
+        font-weight: 600;
+    }
+    body {
+        font-size: 15px;
+        font-family: 'Mulish', sans-serif;
+    }
+    #content {
+        margin: auto;
+        width: 100%;
+        max-width: 650px;
+        text-align:justify;
+    }
+    #content_research {
+        margin: auto;
+        width: 100%;
+        max-width: 650px;
+        text-align:left;
+    }
+    h1 {
+        text-align: left;
+        margin-bottom: 0px;
+    }
+    li {
+        margin-bottom: 5px;
+    }
+    img#me {
+        float: left;
+        margin-right: 10px;
+        height: 300px;
+    }
+    img#footer-image {
+        float: center;
+        width: 100%;
+    }
+    hr { 
+    display: block;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    }
+    table#schedule {
+        border-collapse: collapse;
+        width: 100%;
+    }
+    td#date {
+        width: 7.5%;
+    }
+    td#number{
+        width: 7.5%;
+    }
+    td#lec-title{
+        width: 55%
+    }
+    td#materials{
+        width: 30%
+    }
+
+    @media (prefers-color-scheme: dark) {
+      body {
+        color: #eee;
+        background: #121212;
+      }
+      hr {
+        border-color: white;
+      }
+    }
+    </style>
+
+
+</head>
+
+<div id="content">
+
+<h1>Introduction to Reinforcement Learning</h1>
+<hr>
+<p>
+This page presents lecture materials for CS 4789/5789: Introduction to Reinforcement Learning taught by Sarah Dean at Cornell University in spring 2022.
+This course was first taught <a target="_blank" href="https://wensun.github.io/CS4789.html">by Wen Sun in spring 2021</a>.</p>
+<h2>Schedule</h2>
+<table id="schedule" border="1">
+    <tbody>
+        <tr>
+            <td id="date"><strong>Date</strong></td>
+            <td id="number"><strong>no.</strong></td>
+            <td id="lec-title"><strong>Lecture Title</strong></td>
+            <td id="materials"><strong>Materials</strong></td>
+        </tr>
+        <tr>
+            <td id="date">1/24</td>
+            <td id="number">1</td>
+            <td id="lec-title">Introduction to RL</td>
+            <td id="materials">
+                <a href="cs4789/lec01-notes.pdf" target="_blank">Lecture Notes</a>
+                <br />
+                <a href="https://slides.com/sarahdean-2/cs-4-5789-lec-1?token=iER0vaXO" target="_blank">Slides</a>, 
+                <a href="cs4789/lec01-live.pdf" target="_blank" >Live Notes</a>, 
+                <a href="https://vod.video.cornell.edu/media/CS4789%3A%20Lecture%201/1_j2rn1y51" target="_blank">Video</a>
+            </td>
+        </tr>
+        <tr>
+            <td id="date">1/26</td>
+            <td id="number">2</td>
+            <td id="lec-title">MDPs and Bellman Equations</td>
+            <td id="materials">
+                <a href="cs4789/lec02-notes.pdf" target="_blank">Lecture Notes</a>
+                <br />
+                <a href="https://slides.com/sarahdean-2/cs-4-5789-lec-2?token=Bo8g-boI" target="_blank">Slides</a>, 
+                <a href="cs4789/lec02-live.pdf" target="_blank">Live Notes</a>, 
+                <a href="https://vod.video.cornell.edu/media/CS4789A+Lecture+2/1_bxgyt2t2" target="_blank">Video</a>
+            </td>
+        </tr>
+        <tr>
+            <td id="date">1/31</td>
+            <td id="number">3</td>
+            <td id="lec-title">MDPs, Optimal Policies, and Value Iteration</td>
+            <td id="materials">
+                <a href="cs4789/lec03-notes.pdf" target="_blank">Lecture Notes</a>
+                <br />
+                <a href="https://slides.com/sarahdean-2/cs-4-5789-lecture-3?token=GUdJ-aF1" target="_blank">Slides</a>, 
+                <a href="cs4789/lec03-live.pdf" target="_blank">Live Notes</a>, 
+                <a href="https://vod.video.cornell.edu/media/+CS4789A+Lecture+3/1_wkvyx7m6" target="_blank">Video</a>
+            </td>
+        </tr>
+        <tr>
+            <td id="date">2/2</td>
+            <td id="number">4</td>
+            <td id="lec-title">Policy Iteration and Dynamic Programming</td>
+            <td id="materials">
+                <a href="cs4789/lec04-notes.pdf" target="_blank">Lecture Notes</a>
+                <br />
+                <a href="https://slides.com/sarahdean-2/cs-4-5789-lecture-4?token=9Vl1PpSw" target="_blank">Slides</a>, 
+                <a href="cs4789/lec04-live.pdf" target="_blank">Live Notes</a>, 
+                <a href="https://vod.video.cornell.edu/media/CS4789A+Lecture+4/1_323sw6ni" target="_blank">Video</a></td>
+        </tr>
+        <tr>
+            <td id="date">2/7</td>
+            <td id="number">5</td>
+            <td id="lec-title">Continuous Control</td>
+            <td id="materials">
+                <a href="cs4789/lec05-notes.pdf" target="_blank">Lecture Notes</a>
+                <br />
+                <a href="https://slides.com/sarahdean-2/cs-4-5789-lecture-5?token=ZwexYUWo" target="_blank">Slides</a>, 
+                <a href="cs4789/lec05-live.pdf" target="_blank">Live Notes</a>, 
+                <a href="https://vod.video.cornell.edu/media/+CS4789A+Lecture+5/1_zmrwfnph" target="_blank">Video</a></td>
+        </tr>
+        <tr>
+            <td id="date">2/9</td>
+            <td id="number">6</td>
+            <td id="lec-title">Linear Quadratic Regulation</td>
+            <td id="materials">
+                <a href="cs4789/lec06-notes.pdf" target="_blank">Lecture Notes</a>
+                <br />
+                <a href="https://slides.com/sarahdean-2/cs-4-5789-lecture-6?token=2DoH2bv8" target="_blank">Slides</a>, 
+                <a href="cs4789/lec06-live.pdf" target="_blank">Live Notes</a>, 
+                <a href="https://vod.video.cornell.edu/media/CS4789A+Lecture+6/1_ljs91g7s" target="_blank">Video</a></td>
+        </tr>
+        <tr>
+            <td id="date">2/14</td>
+            <td id="number">7</td>
+            <td id="lec-title">Nonlinear Control</td>
+            <td id="materials">
+                <a href="cs4789/lec07-notes.pdf" target="_blank">Lecture Notes</a>
+                <br />
+                <a href="https://slides.com/sarahdean-2/cs-4-5789-lecture-7?token=ETn95Den" target="_blank">Slides</a>, 
+                <a href="cs4789/lec07-live.pdf" target="_blank">Live Notes</a>, 
+                <a href="https://vod.video.cornell.edu/media/CS4789A+Lecture+7/1_it3koaou" target="_blank">Video</a></td>
+        </tr>
+        <tr>
+            <td id="date">2/16</td>
+            <td id="number">8</td>
+            <td id="lec-title">Limitations in Control and Observation</td>
+            <td id="materials"></td>
+        </tr>
+        <tr>
+            <td id="date">2/21</td>
+            <td id="number">9</td>
+            <td id="lec-title">Learning and Estimation</td>
+            <td id="materials"></td>
+        </tr>
+        <tr>
+            <td id="date">2/23</td>
+            <td id="number">10</td>
+            <td id="lec-title">Model-based RL</td>
+            <td id="materials"></td>
+        </tr>
+        <tr>
+            <td id="date">2/28</td>
+            <td id="number"></td>
+            <td id="lec-title">February Break</td>
+            <td id="materials"></td>
+        </tr>
+        <tr>
+            <td id="date"></td>
+            <td id="number"></td>
+            <td id="lec-title"></td>
+            <td id="materials"></td>
+        </tr>
+    </tbody>
+</table>
+</div>
+</html>
