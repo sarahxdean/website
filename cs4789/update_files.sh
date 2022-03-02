@@ -1,0 +1,1 @@
+cp ~/Dropbox/cs4789sp22/lectures/*.pdf ~/Dropbox/Notes/website/cs4789/
