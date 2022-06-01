@@ -18,6 +18,40 @@
         color: #4682B4;
         font-weight: 600;
     }
+    a.footnote {
+       text-decoration:none;
+       color: black;
+        font-weight: 400;
+       -webkit-transition: all 1s ease;
+       -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+       transition: all 1s ease;
+    } 
+
+    a.footnote span {
+       z-index: -1;
+       opacity: 0;
+       position: absolute;
+       max-width: 300px;
+       padding:3px 3px;
+       border:1px solid black;
+       background-color: white;
+       -webkit-transition: all 1s ease;
+       -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+       transition: all 1s ease;
+    }
+
+    a.footnote:hover span {
+       z-index: 9;
+       opacity: 1;
+       -webkit-transition: all 1s ease;
+       -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+       transition: all 1s ease;
+    }
+
+
 	body {
 	    font-size: 15px;
 	    font-family: 'Mulish', sans-serif;
@@ -81,7 +115,9 @@
      <p>sdean AT cornell DOT edu 
      </p>
 	<p> <img src="whidbey.jpg" id="me" alt="Sarah Dean" /> 
-        I <a href="https://www.engineering.cornell.edu/spotlights/sarah-dean-understanding-fundamentals-data-driven-methods-control-and-decision-making" target="_blank">recently joined</a> the CS Department at Cornell as an Assistant Professor. If you are a student interested in working with me, feel free to reach out.
+        I <a href="https://www.engineering.cornell.edu/spotlights/sarah-dean-understanding-fundamentals-data-driven-methods-control-and-decision-making" target="_blank">recently joined</a> the CS Department at Cornell as an Assistant Professor. If you are interested in working with me, feel free to reach out!<a class="footnote"><sup>&#9432;</sup><span>
+            I do not have the capacity to supervise remote internships and I can't guarantee a reply to every email. 
+        </span></a>
     
     </p>
 
@@ -114,7 +150,8 @@
     <div id="content">
     <h2>Teaching</h2>
 
-    <p>At Cornell, I am teaching <a target="_blank" href="cs4789.html">CS 4/5789: Introduction to Reinforcement Learning</a> in Spring 2022.</p>
+    <p>At Cornell, I will teach CS 6784-002: Machine Learning in Feedback Systems in Fall 2022.
+        I taught <a target="_blank" href="cs4789.html">CS 4/5789: Introduction to Reinforcement Learning</a> in Spring 2022.</p>
 
     <p>At Berkeley, I worked on course development for a new <a href='https://bcourses.berkeley.edu/courses/1503123' target="_blank">EECS Anti-Racism and Social Justice course</a> (and gave a guest lecture on <a target="_blank" href="https://slides.com/sarahdean-2/bias-in-algorithms">Bias in Algorithms</a>) and as a Graduate Student Instructor for Statistical Learning Theory (EECS 281) and Introduction to Machine Learning (EECS 189/289).</p>
 
@@ -130,7 +167,7 @@
     </p>
 
     <p>
-        <i>Preference Dynamics Under Personalized Recommendations</i> 
+        <i>Preference Dynamics Under Personalized Recommendations</i> [<a href='https://arxiv.org/abs/2205.13026' target="_blank">arXiv</a>]
         <br>
         Sarah Dean and Jamie Morgenstern<br>
         to appear at EC 2022.<br>
@@ -290,7 +327,7 @@
     </div>
     <div id="content_research">
     <p><img src="trees.jpg" alt="a woman among giants" id="footer-image" />
-    <br>Last updated 15 February 2022. </p>
+    <br>Last updated 1 June 2022. </p>
     </div>
 </body>
 </html>
