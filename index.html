@@ -3,125 +3,33 @@
 <html>
 <head>
 
-     <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/muli" type="text/css"/> 
+    <link rel="stylesheet" href="tufte.css"/>
 
 
     <title>Sarah Dean</title>
-    
-    <style type="text/css">
-	a, a:visited {
-	    text-decoration: none;
-	    color: #4682B4;
-        font-weight: 600;
-	}
-    a:hover {
-        text-decoration: underline;
-        color: #4682B4;
-        font-weight: 600;
-    }
-    a.footnote {
-       text-decoration:none;
-       color: black;
-        font-weight: 400;
-       -webkit-transition: all 1s ease;
-       -moz-transition: all 1s ease;
-       -o-transition: all 1s ease;
-       transition: all 1s ease;
-    } 
-
-    a.footnote span {
-       z-index: -1;
-       opacity: 0;
-       position: absolute;
-       max-width: 300px;
-       padding:3px 3px;
-       border:1px solid black;
-       background-color: white;
-       -webkit-transition: all 1s ease;
-       -moz-transition: all 1s ease;
-       -o-transition: all 1s ease;
-       transition: all 1s ease;
-    }
-
-    a.footnote:hover span {
-       z-index: 9;
-       opacity: 1;
-       -webkit-transition: all 1s ease;
-       -moz-transition: all 1s ease;
-       -o-transition: all 1s ease;
-       transition: all 1s ease;
-    }
-
-
-	body {
-	    font-size: 15px;
-	    font-family: 'MuliRegular', sans-serif;
-	}
-	#content {
-        margin: auto;
-        width: 100%;
-        max-width: 650px;
-        text-align:justify;
-    }
-    #content_research {
-        margin: auto;
-        width: 100%;
-        max-width: 650px;
-        text-align:left;
-    }
-	h1 {
-	    text-align: left;
-	    margin-bottom: 0px;
-	}
-	li {
-	    margin-bottom: 5px;
-	}
-	img#me {
-	    float: left;
-	    margin-right: 10px;
-	    height: 300px;
-	}
-	img#footer-image {
-	    float: center;
-	    width: 100%;
-	}
-	hr { 
-    display: block;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-left: auto;
-    margin-right: auto;
-    border-width: 1px;
-    border-color: black;
-    border-style: solid;
-	}
-
-    @media (prefers-color-scheme: dark) {
-      body {
-        color: #eee;
-        background: #121212;
-      }
-      hr {
-        border-color: white;
-      }
-    }
-    </style>
-
 
 </head>
-<body>
-    <div id="content">
+<body><article class=sans>
+    <section>
+            <figure>
+          <img src="whidbey_croph.jpg" alt="Sarah Dean"/>
+    </figure> 
 	 <h1>Sarah Dean</h1>
-	 <hr>
-     <p>sdean AT cornell DOT edu <a class="footnote"><sup>&#9432;</sup><span>
-            I can't guarantee a reply to every email. I do not have the capacity to supervise remote internships.
-        </span></a>
+	 <!-- <hr> -->
+     <p class="subtitle">sdean AT cornell DOT edu          
      </p>
-	<p> <img src="whidbey.jpg" id="me" alt="Sarah Dean" /> 
+
+	<p> 
+        <!-- <img src="whidbey.jpg" id="me" alt="Sarah Dean" />  -->
         I <a href="https://www.engineering.cornell.edu/spotlights/sarah-dean-understanding-fundamentals-data-driven-methods-control-and-decision-making" target="_blank">recently joined</a> the CS Department at Cornell as an Assistant Professor. If you are interested in working with me, feel free to reach out!
+        <label for="mn-email" class="margin-toggle">&#9432;</label>
+        <input type="checkbox" id="mn-email" class="margin-toggle"/>
+        <span class="marginnote">
+          I can't guarantee a reply to every email. I do not have the capacity to supervise remote internships.
+        </span>  
     </p>
 
-    
+   
     <p>I study the interplay between optimization, machine learning, and dynamics in real-world systems. My research focuses on understanding the fundamentals of data-driven methods for control and decision-making, inspired by applications ranging from robotics to recommendation systems.
     You can learn more by reading <a href="https://www2.eecs.berkeley.edu/Pubs/TechRpts/2021/EECS-2021-170.html" target="_blank">my dissertation</a> or <a href="https://www.youtube.com/watch?v=Snvo-nbASQ4" target="_blank">watching</a> my <a href="https://slides.com/sarahdean-2/dissertation-talk" target="_blank">dissertation talk</a>.
     </p>
@@ -131,23 +39,24 @@
     advised by <a href='https://people.eecs.berkeley.edu/~brecht/index.html' target="_blank">Ben Recht</a>. 
     At Berkeley, I was a <a href='https://medium.com/@roeldobbe/from-techno-optimism-to-techno-dystopia-time-to-redefine-what-it-means-to-be-in-tech-7d65a83939a' target="_blank">founding member</a> of <i>Graduates for Engaged and Extended Scholarship in computing and Engineering</i> (<a href='https://geesegraduates.org/' target="_blank">GEESE</a>).
     I interned with <a href="https://web.archive.org/web/20200808225958/https://canopy.cr/" target="_blank">Canopy</a> in Boston, MA during Summer 2019. 
-    </p> 
-    <!-- <p>
-    When I'm not working or <a href='https://getpocket.com/@37apjTx7Ad9bTddS07gO699g94dcA776fvoa6ex63cp90Gi82133fTrFcdtVP055' target="_blank">reading</a>, I like to spend time pretending to be athletic outside: hiking, biking, swimming, sailing, skating, and cross country skiing.
-    </p>   -->
-    <p>
-        <b>Resources</b>&ensp;&ensp;&ensp;&ensp; 
-        For reference, my
+    <label for="mn-res" class="margin-toggle">&#9432;</label>
+    <input type="checkbox" id="mn-res" class="margin-toggle"/>
+        <span class="marginnote">
+          For reference, my
         <a target="_blank" href="https://www.youtube.com/watch?v=OslDMMWU_zc">job talk</a>, 
         <a href='cv.pdf' target="_blank">CV</a>,
         <a href='https://drive.google.com/drive/folders/1OmLqbNQRFSPfOrz4xgzNSDQVpy3cvK23?usp=sharing' target="_blank">faculty app</a>,
         and
         <a href="https://drive.google.com/drive/folders/0B3t1xt1geROxOU1sY1dhNFZKc2c?resourcekey=0-1OoGpUS7TXykJyR8nYgGZA&usp=sharing" target="_blank">NSF GRFP app</a>.
+        </span> 
+    </p> 
 
-    </p>
-    </div>
+    <!-- <p>
+    When I'm not working or <a href='https://getpocket.com/@37apjTx7Ad9bTddS07gO699g94dcA776fvoa6ex63cp90Gi82133fTrFcdtVP055' target="_blank">reading</a>, I like to spend time pretending to be athletic outside: hiking, biking, swimming, sailing, skating, and cross country skiing.
+    </p>   -->
 
-    <div id="content">
+
+
     <h2>Teaching</h2>
 
     <p>At Cornell, I will teach CS 6784-002: Machine Learning in Feedback Systems in Fall 2022.
@@ -157,14 +66,15 @@
 
     <p>At Penn, I worked as a teaching assistant for the lab-based Digital Audio Basics (ESE 150) and Introduction to Electrical and Systems Engineering (ESE 111). I also worked as a teaching assistant for Integral Calculus (Math 104) and Multivariate Calculus (Math 114).</p>
    
-    </div>
-
-    <div id="content_research">
     <h2>Publications</h2>
 
-    <p>For the most up to date list of my publications and preprints, see my <a href='https://scholar.google.com/citations?user=xhKqjpYAAAAJ' target="_blank">Google Scholar profile</a>.
+    <p>
+    <label for="mn-pub" class="margin-toggle">&#9432;</label>
+    <input type="checkbox" id="mn-pub" class="margin-toggle"/>
+    <span class="marginnote">
+        My <a href='https://scholar.google.com/citations?hl=en&user=xhKqjpYAAAAJ&view_op=list_works&sortby=pubdate' target="_blank">Google Scholar profile</a> has the most up to date list of publications and preprints.
     If you are interested in code for a paper without a github link, feel free to send me an email.
-    </p>
+    </span> </p>
 
     <p>
         <i>Modeling Content Creator Incentives on Algorithm-Curated Platforms</i> [<a href='https://arxiv.org/abs/2206.13102' target="_blank">arXiv</a>]
@@ -176,8 +86,8 @@
     <p>
         <i>Engineering a Safer Recommender System</i> 
         <br>
-        Sarah Dean and Liu Leqi<br>
-        to appear at Responsible Decision Making in Dynamic Environments workshop at ICML 2022.
+        Liu Leqi and Sarah Dean<br>
+        at Responsible Decision Making in Dynamic Environments workshop at ICML 2022.
     </p>
 
     <p>
@@ -192,15 +102,15 @@
 
         <br>
         Sarah Dean and Jamie Morgenstern<br>
-        to appear at EC 2022.<br>
+        presented at EC 2022.<br>
     </p>
 
     <p>
         <i>Reward Reports for Reinforcement Learning</i> [<a href='https://arxiv.org/abs/2204.10817' target="_blank">arXiv</a>]
         <br>
         Thomas Krendl Gilbert, Sarah Dean, Nathan Lambert, Tom Zick, and Aaron Snoswell<br>
-        under review.<br>
-        short version to appear at Responsible Decision Making in Dynamic Environments workshop at ICML 2022.
+        under review<br>
+        short version at Responsible Decision Making in Dynamic Environments workshop at ICML 2022.
     </p>
 
     <p>
@@ -342,16 +252,17 @@
     <p><i> A Broader View on Bias in Automated Decision-Making: Reflecting on Epistemology and Dynamics</i> [<a href='https://arxiv.org/abs/1807.00553' target="_blank">arXiv</a>]
         <br> Roel Dobbe, Sarah Dean, Thomas Gilbert, and Nitin Kohli
         <br> presented at FAT/ML 2018. </p>
+    <p>    
+    <label for="mn-update" class="margin-toggle">&#9432;</label>
+    <input type="checkbox" id="mn-update" class="margin-toggle"/>
+    <span class="marginnote">
+     Last updated 29 June 2022. 
+    </span>  
+    </p>
 
-    
-
-
-
-    </div>
-    <div id="content_research">
-    <p><img src="trees.jpg" alt="a woman among giants" id="footer-image" />
-    <br>Last updated 29 June 2022. </p>
-    </div>
-</body>
+    </section>
+    <figure><img src="trees.jpg" alt="a woman among giants" /></figure>
+    <!-- <br>Last updated 29 June 2022. </p> -->
+</article></body>
 </html>
 
